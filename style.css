@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 1em;
     text-decoration: none;
     color: white;
 }
@@ -12,14 +11,14 @@
 /* global variables */
 
 :root {
-    --ct-width-max: 382px;
-    --ct-width-min: 326px;
+    --ct-width-max: 23.875rem;
+    --ct-width-min: 20.375rem;
 
-    --ct-height-max: 612px;
-    --ct-height-min: 580px;
+    --ct-height-max: 38.25rem;
+    --ct-height-min: 36.25rem;
     
-    --int-width-max: 303px;
-    --int-width-min: 278px;
+    --int-width-max: 18.9375rem;
+    --int-width-min: 17.275rem;
 
     --ff-100: Inter;
 
@@ -41,13 +40,13 @@ body {
     background-color: var(--clr-neutral-400);
     color: var(--clr-neutral-100);
     font-family: var(--ff-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: var(--ct-width-max);
     height: var(--ct-height-max);
     border-radius: 10px;
@@ -57,52 +56,52 @@ body {
 .main-wrapper {
     width: var(--int-width-max);
     margin: 0 auto;
-    margin-top: 38px;
+    margin-top: 2.375rem;
     text-align: center;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 30em) {
     .container {
         width: var(--ct-width-min);
         height: var(--ct-height-min);
     }
     .main-wrapper {
         width: var(--int-width-min);
-        margin-top: 21px;
+        margin-top: 1.3125rem;
     }
 }
 
 img {
-    border-radius: 100px;
-    width: 90px;
+    border-radius: 3rem;
+    width: 5.625rem;
 }
 
 h1 {
-    margin-top: 25px;
-    font-size: 24px;
+    margin-top: 1.56rem;
+    font-size: 1.5rem;
     font-weight: var(--fw-semi-bold);
 }
 
 .location {
     display: block;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     color: var(--clr-accent-100);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: var(--fw-semi-bold);
 }
 
 p {
-    margin-top: 25px;
-    font-size: 14px;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
     font-weight: var(--fw-regular);
 }
 
 ul {
-    margin-top: 25px;
+    margin-top: 1.5rem;
 }
 
 ul * + * {
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 
 li {
@@ -112,10 +111,10 @@ li {
 a {
     display: block;
     background-color: var(--clr-neutral-200);
-    border-radius: 7px;
-    height: 45px;
-    line-height: 45px;
-    font-size: 14px;
+    border-radius: 0.4375rem;
+    height: 2.8125rem;
+    line-height: 2.8125rem;
+    font-size: 0.875rem;
     font-weight: var(--fw-semi-bold);
 }
 
